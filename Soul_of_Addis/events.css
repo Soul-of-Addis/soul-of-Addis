@@ -1,0 +1,53 @@
+/* Events page (events.html): celebrations list. */
+.celebration-list {
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.celebration {
+  display: grid;
+  grid-template-columns: 110px 1.2fr 2fr;
+  gap: 28px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+
+.celebration .d {
+  font: 500 2.6rem/1 var(--serif);
+}
+
+.celebration .d small {
+  display: block;
+  font: 600 .56rem/1.2 var(--sans);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.celebration h3 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.celebration h3 span {
+  display: block;
+  font: 400 1rem var(--ethiopic);
+  color: var(--ochre-deep);
+  margin-top: 6px;
+}
+
+.celebration p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: .95rem;
+}
+
+
+@media (max-width: 900px) {
+  .celebration {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
