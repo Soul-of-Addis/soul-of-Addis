@@ -1,41 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Places | Addis Unveiled</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Addis Ababa's green spaces, museums, landmarks and markets, from Entoto Park to Merkato.">
+  <meta name="theme-color" content="#faf7f0">
+  <title>Places to Discover | Soul of Addis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/places.css">
 </head>
-<body>
-    <header>
-        <h1>Places to Discover</h1>
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a> |
-            <a href="places.html">Places</a> |
-            <a href="food.html">Food</a> |
-            <a href="coffee.html">Coffee</a> |
-            <a href="culture.html">Culture</a> |
-            <a href="events.html">Events</a>
-        </nav>
-    </header>
-    <main>
-        <h2>See Addis from a new perspective</h2>
-        <p>Explore green spaces, museums, landmarks, and places that tell the story of the city.</p>
+<body id="top" class="places-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+  <div class="wrap nav-row">
+    <a class="logo" href="index.html" aria-label="Soul of Addis home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="#d69a48" stroke-width="2" stroke-linecap="round"><path d="M5 27V15M11 27V8M17 27V19"/><path d="M23 27c0-6 2-9 5-11"/></g><circle cx="27" cy="9" r="2.4" fill="#2d5a45"/></svg><span>Soul of Addis<small>Field guide</small></span></a>
+    <input class="nav-check vh" type="checkbox" id="nav-check" aria-label="Toggle menu">
+    <label class="nav-toggle" for="nav-check"><span></span></label>
+    <nav class="main-nav" id="site-nav" aria-label="Main navigation">
+      <ul><li><a href="places.html" aria-current="page">Places</a></li><li><a href="food.html">Food</a></li><li><a href="coffee.html">Coffee</a></li><li><a href="culture.html">Culture</a></li><li><a href="events.html">Events</a></li><li><a href="plan.html">Plan a visit</a></li><li><a class="nav-cta" href="places.html">Explore the city &#8599;</a></li></ul>
+    </nav>
+  </div>
+</header>
+  <main id="main-content">
+
+    <input class="vh" type="radio" name="place-filter" id="f-all" checked aria-label="Show all places">
+    <input class="vh" type="radio" name="place-filter" id="f-nature" aria-label="Show outdoors">
+    <input class="vh" type="radio" name="place-filter" id="f-heritage" aria-label="Show heritage">
+    <input class="vh" type="radio" name="place-filter" id="f-market" aria-label="Show markets">
+    <section class="page-hero">
+      <div class="wrap grid">
+        <div>
+          <p class="crumbs"><a href="index.html">Home</a><span>/</span>Places</p>
+          <h1 id="page-title">Places to <em>discover.</em></h1>
+          <p class="lead">See Addis Ababa from a new perspective. Explore green spaces, museums, landmarks and destinations that help tell the story of the city.</p>
+          <div class="subnav" role="group" aria-label="Filter places">
+            <span class="label">Show</span>
+            <label class="chip" for="f-all">All</label>
+            <label class="chip" for="f-nature">Outdoors</label>
+            <label class="chip" for="f-heritage">Heritage</label>
+            <label class="chip" for="f-market">Markets</label>
+          </div>
+        </div>
+        <figure class="hero-figure" style="margin:0"><div class="ph " data-tone="forest"><img src="assets/images/entoto-park.jpg" alt="Entoto Park in Addis Ababa" width="1200" height="900" fetchpriority="high"><span class="credit">Photo: Linguist Sajda · <a href="https://commons.wikimedia.org/wiki/File:Entoto_Park_Addis_Ababa.jpg">CC BY-SA 4.0</a></span></div></figure>
+      </div>
+    </section>
+    <div class="wrap places-wrap">
+      
+      <section class="place reveal" id="entoto-park" data-cat="nature" aria-labelledby="entoto-park-h">
+        <div class="place-media"><div class="ph " data-tone="forest"><img src="assets/images/entoto-park.jpg" alt="Trees and trails at Entoto Park" width="1200" height="900" loading="lazy"></div></div>
         <article>
-            <h3>Entoto Park</h3>
-            <p>A destination for nature, outdoor activities, and views of Addis Ababa.</p>
-            <!-- TODO: Add an image and verified visitor information. -->
+          <span class="tagline">Outdoors · Entoto</span>
+          <h2 id="entoto-park-h">Entoto <em>Park</em></h2>
+          <p class="lead">Entoto Park is a recreational destination in the Entoto area, known for its natural surroundings and views of Addis Ababa. It offers visitors a chance to enjoy outdoor spaces away from the busiest parts of the city.</p>
+          <h3 style="font-size:1.1rem;margin:1.2em 0 0">What makes it interesting?</h3>
+          <ul class="ticks"><li>Green surroundings and outdoor spaces.</li><li>Views across parts of Addis Ababa.</li><li>An opportunity to enjoy nature and outdoor activities.</li></ul>
+          <p class="note"><strong>Visitor reminder:</strong> Check current access information, opening hours and any fees before planning a visit.</p>
         </article>
+      </section>
+      
+      <section class="place reveal" id="national-museum" data-cat="heritage" aria-labelledby="national-museum-h">
+        <div class="place-media"><div class="pattern-panel clay" role="img" aria-label="Decorative pattern with the Amharic word for museum"><div class="center"><span class="am" lang="am">ቅርስ</span><small>Heritage</small></div></div></div>
         <article>
-            <h3>National Museum of Ethiopia</h3>
-            <p>A museum where visitors can learn about Ethiopia's archaeological and cultural heritage.</p>
-            <!-- TODO: Confirm current visitor details before publishing. -->
+          <span class="tagline">Heritage · Museum</span>
+          <h2 id="national-museum-h">National Museum <em>of Ethiopia</em></h2>
+          <p class="lead">The National Museum of Ethiopia is an important place to learn about the country's archaeological, historical and artistic heritage. Its collections help visitors understand different periods of Ethiopia's past.</p>
+          <h3 style="font-size:1.1rem;margin:1.2em 0 0">Why visit?</h3>
+          <ul class="ticks"><li>Explore exhibitions related to Ethiopian history and heritage.</li><li>Learn about archaeology and cultural history.</li><li>Discover objects and stories connected to the country's past.</li></ul>
+          <p class="note"><strong>Visitor reminder:</strong> Confirm current opening hours, ticket information and photography rules with the museum before visiting.</p>
         </article>
+      </section>
+      
+      <section class="place reveal" id="unity-park" data-cat="heritage nature" aria-labelledby="unity-park-h">
+        <div class="place-media"><div class="ph " data-tone="park"><img src="assets/images/unity-park.jpg" alt="A view of Unity Park in Addis Ababa" width="1200" height="900" loading="lazy"><span class="credit">Photo: Amanuelaw · <a href="https://commons.wikimedia.org/wiki/File:Unity_park.jpg">CC BY-SA 4.0</a></span></div></div>
         <article>
-            <h3>Unity Park</h3>
-            <p>A destination associated with Ethiopian history, heritage, and cultural exhibits.</p>
-            <!-- TODO: Add verified opening hours and visitor information. -->
+          <span class="tagline">Heritage · Gardens</span>
+          <h2 id="unity-park-h">Unity <em>Park</em></h2>
+          <p class="lead">Unity Park is a visitor destination within the grounds of the National Palace. It presents aspects of Ethiopia's history, heritage, nature and cultural diversity.</p>
+          <h3 style="font-size:1.1rem;margin:1.2em 0 0">What can visitors explore?</h3>
+          <ul class="ticks"><li>Heritage and historical exhibits.</li><li>Gardens and landscaped outdoor areas.</li><li>Displays connected to Ethiopia's cultural diversity.</li></ul>
+          <p class="note"><strong>Visitor reminder:</strong> Check current booking requirements, opening hours and visitor rules before your trip.</p>
         </article>
-    </main>
-    <footer><p><a href="index.html">Back to home</a></p></footer>
+      </section>
+      
+      <section class="place reveal" id="merkato" data-cat="market" aria-labelledby="merkato-h">
+        <div class="place-media"><div class="pattern-panel ink" role="img" aria-label="Decorative pattern with the Amharic word for market"><div class="center"><span class="am" lang="am">ገበያ</span><small>Market</small></div></div></div>
+        <article>
+          <span class="tagline">Market · Everyday life</span>
+          <h2 id="merkato-h"><em>Merkato</em></h2>
+          <p class="lead">Merkato is widely known as one of Addis Ababa's major open-air market areas. It is a busy commercial district where visitors can experience the energy of everyday trade and find a wide variety of goods.</p>
+          <h3 style="font-size:1.1rem;margin:1.2em 0 0">What makes Merkato distinctive?</h3>
+          <ul class="ticks"><li>A lively atmosphere shaped by local businesses and shoppers.</li><li>A wide range of goods and market activities.</li><li>A glimpse into the city's everyday commercial life.</li></ul>
+          <p class="note"><strong>Visitor reminder:</strong> Keep personal belongings secure and ask permission before photographing people or businesses.</p>
+        </article>
+      </section>
+    </div>
+    <section class="band"><div class="wrap section tight split" style="padding-block:clamp(40px,6vw,72px)">
+      <div><span class="eyebrow">Before you go</span><h2>Plan your visit <em>responsibly.</em></h2></div>
+      <div><p class="lead">Opening hours, prices, access rules and transport arrangements can change. Confirm details through official or trusted sources before travelling.</p>
+        <a class="arrow-link" href="plan.html">Read the visit guide &#8599;</a></div>
+    </div></section>
+    <section class="cta"><div class="wrap"><h2>Hungry after <em>all that walking?</em></h2><p>Addis eats together. Pull up a seat and discover the dishes behind the tables.</p>
+      <a class="btn btn-dark" href="food.html">Taste Addis &#8599;</a></div></section>
+
+  </main>
+  <footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="#d69a48" stroke-width="2" stroke-linecap="round"><path d="M5 27V15M11 27V8M17 27V19"/><path d="M23 27c0-6 2-9 5-11"/></g><circle cx="27" cy="9" r="2.4" fill="#2d5a45"/></svg><span>Soul of Addis<small>Field guide</small></span></a>
+        <p class="foot-tag">A field guide to the <em>beautifully unexpected.</em></p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="places.html">Places</a></li><li><a href="food.html">Food</a></li><li><a href="coffee.html">Coffee</a></li>
+        <li><a href="culture.html">Culture</a></li><li><a href="events.html">Events</a></li></ul></div>
+      <div><h4>Get ready</h4><ul>
+        <li><a href="plan.html">Plan a visit</a></li><li><a href="plan.html#phrases">Amharic phrases</a></li>
+        <li><a href="events.html#celebrations">Celebrations calendar</a></li><li><a href="IMAGE-CREDITS.md">Photo credits</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Soul of Addis. A student Internet Programming project.</span>
+      <span>Made to celebrate the stories, culture and heritage of Addis Ababa, Ethiopia.</span>
+      <a href="#top">Back to top &#8593;</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
