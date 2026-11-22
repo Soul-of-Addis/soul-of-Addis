@@ -1,0 +1,82 @@
+/* Coffee page (coffee.html): ceremony timeline, pull quote. */
+.quote {
+  font: italic 500 clamp(1.5rem, 3vw, 2.3rem)/1.25 var(--serif);
+  max-width: 24ch;
+}
+
+.quote::before {
+  content: "“";
+  display: block;
+  font-size: 4rem;
+  line-height: .6;
+  color: var(--ochre);
+  margin-bottom: 8px;
+}
+
+.timeline {
+  list-style: none;
+  counter-reset: step;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 22px;
+  height: 1px;
+  background: rgba(255,255,255,.3);
+}
+
+.timeline li {
+  counter-increment: step;
+  position: relative;
+  padding: 64px 20px 0 0;
+}
+
+.timeline li::before {
+  content: counter(step);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--ochre);
+  color: var(--forest);
+  display: grid;
+  place-items: center;
+  font: 500 1.2rem var(--serif);
+}
+
+.timeline h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.timeline p {
+  font-size: .88rem;
+  color: rgba(255,255,255,.78);
+}
+
+
+@media (max-width: 1020px) {
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+  .timeline::before {
+    left: 22px;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: auto;
+  }
+  .timeline li {
+    padding: 0 0 28px 66px;
+  }
+}
