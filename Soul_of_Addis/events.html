@@ -1,39 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events | Addis Unveiled</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cultural celebrations, art and music events, and community activities in Addis Ababa.">
+  <meta name="theme-color" content="#faf7f0">
+  <title>What's Happening in Addis? | Soul of Addis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/events.css">
 </head>
-<body>
-    <header>
-        <h1>What's Happening in Addis?</h1>
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a> |
-            <a href="places.html">Places</a> |
-            <a href="food.html">Food</a> |
-            <a href="coffee.html">Coffee</a> |
-            <a href="culture.html">Culture</a> |
-            <a href="events.html">Events</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Events and activities</h2>
-        <p>This section will feature cultural events, exhibitions, festivals, and activities around Addis Ababa.</p>
-        <article>
-            <h3>Cultural celebrations</h3>
-            <p>Introduce celebrations and public cultural events, including what visitors should know before attending.</p>
-        </article>
-        <article>
-            <h3>Art and music events</h3>
-            <p>Share information about performances, exhibitions, and creative gatherings.</p>
-        </article>
-        <article>
-            <h3>Upcoming events</h3>
-            <p>Event dates and details will be added after checking reliable, up-to-date sources.</p>
-        </article>
-        <p><strong>Note:</strong> This is an initial student project page. The event listings are placeholders, not confirmed upcoming events.</p>
-    </main>
-    <footer><p><a href="index.html">Back to home</a></p></footer>
+<body id="top" class="events-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+  <div class="wrap nav-row">
+    <a class="logo" href="index.html" aria-label="Soul of Addis home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="#d69a48" stroke-width="2" stroke-linecap="round"><path d="M5 27V15M11 27V8M17 27V19"/><path d="M23 27c0-6 2-9 5-11"/></g><circle cx="27" cy="9" r="2.4" fill="#2d5a45"/></svg><span>Soul of Addis<small>Field guide</small></span></a>
+    <input class="nav-check vh" type="checkbox" id="nav-check" aria-label="Toggle menu">
+    <label class="nav-toggle" for="nav-check"><span></span></label>
+    <nav class="main-nav" id="site-nav" aria-label="Main navigation">
+      <ul><li><a href="places.html">Places</a></li><li><a href="food.html">Food</a></li><li><a href="coffee.html">Coffee</a></li><li><a href="culture.html">Culture</a></li><li><a href="events.html" aria-current="page">Events</a></li><li><a href="plan.html">Plan a visit</a></li><li><a class="nav-cta" href="places.html">Explore the city &#8599;</a></li></ul>
+    </nav>
+  </div>
+</header>
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="wrap grid">
+        <div>
+          <p class="crumbs"><a href="index.html">Home</a><span>/</span>Events</p>
+          <h1>What's happening <em>in Addis?</em></h1>
+          <p class="lead">Discover cultural celebrations, exhibitions, performances, festivals and activities that bring people together across the city.</p>
+          <a class="arrow-link" href="#celebrations">Celebrations through the year &#8599;</a>
+        </div>
+        <figure class="hero-figure" style="margin:0"><div class="ph " data-tone="crowd"><img src="assets/images/meskel-celebration.jpg" alt="People gathering for the Meskel celebration in Addis Ababa" width="1200" height="900" fetchpriority="high"><span class="credit">Photo: DanielGirmaTsige · <a href="https://commons.wikimedia.org/wiki/File:Meskel_Celebration.jpg">CC BY-SA 4.0</a></span></div></figure>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap grid-3">
+        <article class="info-card dark reveal" aria-labelledby="celebrations-heading"><span class="am" lang="am" style="color:var(--ochre)">በዓል</span><h3 id="celebrations-heading">Cultural celebrations</h3>
+          <p>Addis Ababa hosts celebrations connected to Ethiopia's diverse religious, cultural and national traditions, with gatherings, music, food, ceremonies and public activities.</p></article>
+        <article class="info-card reveal" aria-labelledby="art-events-heading"><span class="am" lang="am">ጥበብ</span><h3 id="art-events-heading">Art and music events</h3>
+          <p>Art exhibitions, live music, theatre, film screenings and creative gatherings offer chances to discover local artists and different forms of expression.</p></article>
+        <article class="info-card ochre reveal" aria-labelledby="community-events-heading"><span class="am" lang="am">ማህበረሰብ</span><h3 id="community-events-heading">Community activities</h3>
+          <p>Public discussions, educational events, markets, workshops, sports activities and neighborhood gatherings connect residents and visitors with the city.</p></article>
+      </div>
+    </section>
+
+    <section class="section band" id="celebrations" aria-labelledby="upcoming-heading">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">Through the year</span><h2 id="upcoming-heading">Widely observed <em>celebrations</em></h2></div>
+          <p style="max-width:42ch;margin:0">Examples of widely observed celebrations in Ethiopia include Enkutatash, Meskel, Timkat and Eid. The way each occasion is observed can vary among communities.</p></div>
+        <ul class="celebration-list">
+          <li class="celebration reveal"><div class="d">11<small>Sep</small></div><h3>Enkutatash<span lang="am">እንቁጣጣሽ</span></h3><p>The Ethiopian New Year, welcomed at the end of the rainy season, with family gatherings, flowers and festive meals.</p></li>
+          <li class="celebration reveal"><div class="d">27<small>Sep</small></div><h3>Meskel<span lang="am">መስቀል</span></h3><p>A public celebration associated with the finding of the True Cross, marked with gatherings, ceremonies and a large bonfire (<em>demera</em>).</p></li>
+          <li class="celebration reveal"><div class="d">07<small>Jan</small></div><h3>Genna<span lang="am">ገና</span></h3><p>Ethiopian Christmas, observed with church services and shared meals with family and friends.</p></li>
+          <li class="celebration reveal"><div class="d">19<small>Jan</small></div><h3>Timkat<span lang="am">ጥምቀት</span></h3><p>Celebrates Epiphany with colourful processions, music and people dressed in traditional white clothing.</p></li>
+          <li class="celebration reveal"><div class="d">02<small>Mar</small></div><h3>Adwa Victory Day<span lang="am">የዓድዋ ድል</span></h3><p>A national day remembering the Battle of Adwa, with commemorations, public events and cultural programmes.</p></li>
+          <li class="celebration reveal"><div class="d">&mdash;<small>Moon-based</small></div><h3>Eid celebrations<span lang="am">ኢድ</span></h3><p>Observed by Muslim communities. Dates follow the Islamic lunar calendar, so they move each year.</p></li>
+        </ul>
+        <p class="muted" style="margin:24px 0 0;font-size:.85rem">Dates shown are typical Gregorian dates and can shift by a day from year to year. Always confirm with local announcements.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="status-heading">
+      <div class="wrap split">
+        <div><span class="eyebrow">Upcoming events</span><h2 id="status-heading">Before you <em>attend</em></h2>
+          <p class="note"><strong>Event information status:</strong> This student project page introduces event categories and annual celebrations. It does not list confirmed upcoming events.</p></div>
+        <ol class="checklist reveal">
+          <li><span>Confirm the date, time and venue with the organizer.</span></li>
+          <li><span>Check whether registration or tickets are required.</span></li>
+          <li><span>Look for transport, accessibility and entry information.</span></li>
+          <li><span>Follow the venue's rules and respect other attendees.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta band"><div class="wrap"><span class="eyebrow">Help us keep this page useful</span><h2>Know of <em>something on?</em></h2>
+      <p>Event information changes frequently. Verify announcements and include the organizer's name and a reliable source when publishing an event listing.</p>
+      <a class="btn btn-dark" href="plan.html">Plan a visit &#8599;</a></div></section>
+
+  </main>
+  <footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="#d69a48" stroke-width="2" stroke-linecap="round"><path d="M5 27V15M11 27V8M17 27V19"/><path d="M23 27c0-6 2-9 5-11"/></g><circle cx="27" cy="9" r="2.4" fill="#2d5a45"/></svg><span>Soul of Addis<small>Field guide</small></span></a>
+        <p class="foot-tag">A field guide to the <em>beautifully unexpected.</em></p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="places.html">Places</a></li><li><a href="food.html">Food</a></li><li><a href="coffee.html">Coffee</a></li>
+        <li><a href="culture.html">Culture</a></li><li><a href="events.html">Events</a></li></ul></div>
+      <div><h4>Get ready</h4><ul>
+        <li><a href="plan.html">Plan a visit</a></li><li><a href="plan.html#phrases">Amharic phrases</a></li>
+        <li><a href="events.html#celebrations">Celebrations calendar</a></li><li><a href="IMAGE-CREDITS.md">Photo credits</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Soul of Addis. A student Internet Programming project.</span>
+      <span>Made to celebrate the stories, culture and heritage of Addis Ababa, Ethiopia.</span>
+      <a href="#top">Back to top &#8593;</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
