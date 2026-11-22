@@ -1,0 +1,111 @@
+
+.subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 18px 0 0;
+}
+
+.subnav .label {
+  font: 600 .58rem/1 var(--sans);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-right: 8px;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(24px, 5vw, 72px);
+  align-items: center;
+  padding: clamp(36px, 5vw, 64px) 0;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 90px;
+}
+
+.place:nth-of-type(even) .place-media {
+  order: 2;
+}
+
+.place-media .ph,
+.place-media .pattern-panel {
+  aspect-ratio: 4 / 3.2;
+  border-radius: 4px;
+}
+
+.place-media .pattern-panel {
+  border-radius: 4px;
+}
+
+.place h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: .3em;
+}
+
+.tagline {
+  font: 600 .6rem/1 var(--sans);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--ochre-deep);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.ticks {
+  list-style: none;
+  margin: 18px 0 22px;
+}
+
+.ticks li {
+  position: relative;
+  padding: 9px 0 9px 28px;
+  border-bottom: 1px solid var(--line);
+  font-size: .95rem;
+}
+
+.ticks li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 17px;
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid var(--ochre-deep);
+  border-radius: 50%;
+}
+
+
+@media (max-width: 900px) {
+  .place {
+    grid-template-columns: 1fr;
+  }
+  .place:nth-of-type(even) .place-media {
+    order: 0;
+  }
+}
+
+
+#f-nature:checked ~ .places-wrap .place:not([data-cat~="nature"]),
+#f-heritage:checked ~ .places-wrap .place:not([data-cat~="heritage"]),
+#f-market:checked ~ .places-wrap .place:not([data-cat~="market"]) {
+  display: none;
+}
+
+#f-all:checked ~ .page-hero label[for="f-all"],
+#f-nature:checked ~ .page-hero label[for="f-nature"],
+#f-heritage:checked ~ .page-hero label[for="f-heritage"],
+#f-market:checked ~ .page-hero label[for="f-market"] {
+  background: var(--forest);
+  color: #fff;
+  border-color: var(--forest);
+}
+
+#f-all:focus-visible ~ .page-hero label[for="f-all"],
+#f-nature:focus-visible ~ .page-hero label[for="f-nature"],
+#f-heritage:focus-visible ~ .page-hero label[for="f-heritage"],
+#f-market:focus-visible ~ .page-hero label[for="f-market"] {
+  outline: 2px solid var(--ochre-deep);
+  outline-offset: 3px;
+}
