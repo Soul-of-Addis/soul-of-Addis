@@ -1,211 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethiopian Coffee | Addis Unveiled</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Ethiopian coffee traditions, the coffee ceremony, and the role coffee plays in hospitality and community.">
+  <meta name="theme-color" content="#faf7f0">
+  <title>Every Cup Has a Story | Soul of Addis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/coffee.css">
 </head>
-<body>
-    <header>
-        <h1>Every Cup Has a Story</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="places.html">Places</a> |
-            <a href="food.html">Food</a> |
-            <a href="coffee.html">Coffee</a> |
-            <a href="culture.html">Culture</a> |
-            <a href="events.html">Events</a>
-        </nav>
-    </header>
+<body id="top" class="coffee-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+  <div class="wrap nav-row">
+    <a class="logo" href="index.html" aria-label="Soul of Addis home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="#d69a48" stroke-width="2" stroke-linecap="round"><path d="M5 27V15M11 27V8M17 27V19"/><path d="M23 27c0-6 2-9 5-11"/></g><circle cx="27" cy="9" r="2.4" fill="#2d5a45"/></svg><span>Soul of Addis<small>Field guide</small></span></a>
+    <input class="nav-check vh" type="checkbox" id="nav-check" aria-label="Toggle menu">
+    <label class="nav-toggle" for="nav-check"><span></span></label>
+    <nav class="main-nav" id="site-nav" aria-label="Main navigation">
+      <ul><li><a href="places.html">Places</a></li><li><a href="food.html">Food</a></li><li><a href="coffee.html" aria-current="page">Coffee</a></li><li><a href="culture.html">Culture</a></li><li><a href="events.html">Events</a></li><li><a href="plan.html">Plan a visit</a></li><li><a class="nav-cta" href="places.html">Explore the city &#8599;</a></li></ul>
+    </nav>
+  </div>
+</header>
+  <main id="main-content">
 
-    <main>
+    <section class="page-hero">
+      <div class="wrap grid">
+        <div>
+          <p class="crumbs"><a href="index.html">Home</a><span>/</span>Coffee</p>
+          <h1>Every cup has <em>a story.</em></h1>
+          <p class="lead">Discover Ethiopian coffee traditions and the role coffee plays in hospitality, conversation and community.</p>
+          <a class="arrow-link" href="#ceremony">The ceremony, step by step &#8599;</a>
+        </div>
+        <div class="coffee-art" style="border-radius:4px 4px 70px 4px;aspect-ratio:5/4"><svg viewBox="0 0 400 400" role="img" aria-label="Illustration of a jebena clay coffee pot with small cups and rising steam">
+  <defs><linearGradient id="clay" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a65a33"/><stop offset="1" stop-color="#5e3019"/></linearGradient></defs>
+  <ellipse cx="195" cy="352" rx="150" ry="14" fill="#0f2419" opacity=".45"/>
+  <!-- rekebot tray -->
+  <path d="M40 336h320l-14 14H54z" fill="#d69a48"/>
+  <path d="M40 336h320" stroke="#f0c27a" stroke-width="2"/>
+  <!-- steam -->
+  <g fill="none" stroke="#f3efe3" stroke-width="3" stroke-linecap="round" opacity=".6">
+    <path d="M148 70c-12-14 12-24 0-40"/><path d="M172 62c-12-14 12-24 0-42"/><path d="M62 160c-10-12 10-20 0-34"/>
+  </g>
+  <!-- spout -->
+  <path d="M120 236L66 168c-3-4 3-9 7-6l60 52z" fill="url(#clay)"/>
+  <!-- handle -->
+  <path d="M206 128c64-6 74 70 40 118" fill="none" stroke="#6b3a20" stroke-width="12" stroke-linecap="round"/>
+  <!-- body -->
+  <path d="M152 100h56l-6 14c-1 40 56 52 56 110 0 56-34 100-78 100s-78-44-78-100c0-58 57-70 56-110z" fill="url(#clay)" transform="translate(-6 -10)"/>
+  <!-- neck rim + lid -->
+  <rect x="140" y="84" width="68" height="14" rx="6" fill="#d69a48"/>
+  <path d="M148 84c4-16 48-16 52 0z" fill="#8a4b2a"/><circle cx="174" cy="62" r="6" fill="#d69a48"/>
+  <!-- decorative bands -->
+  <path d="M96 250c30 14 112 14 144 0M100 282c30 14 106 14 136 0" stroke="#f0c27a" stroke-width="3" fill="none" opacity=".85"/>
+  <g fill="#f0c27a" opacity=".9"><circle cx="118" cy="266" r="3"/><circle cx="148" cy="272" r="3"/><circle cx="178" cy="274" r="3"/><circle cx="208" cy="272" r="3"/></g>
+  <!-- cups -->
+  <g>
+    <path d="M276 304h38l-4 30h-30z" fill="#f4efe2"/><path d="M276 304h38" stroke="#d69a48" stroke-width="3"/>
+    <path d="M320 314h34l-3 20h-28z" fill="#f4efe2"/><path d="M320 314h34" stroke="#d69a48" stroke-width="3"/>
+    <ellipse cx="295" cy="306" rx="18" ry="3.5" fill="#3a2418"/><ellipse cx="337" cy="316" rx="15" ry="3" fill="#3a2418"/>
+  </g>
+</svg><div class="badge-round" aria-hidden="true"><span lang="am" style="font-family:var(--ethiopic);font-size:1.2rem;letter-spacing:0">ቡና</span></div></div>
+      </div>
+    </section>
 
-        <h2>Discover Ethiopian Coffee Traditions</h2>
+    <section class="section tight" aria-labelledby="coffee-heritage-heading">
+      <div class="wrap split">
+        <div><span class="eyebrow">Origins</span><h2 id="coffee-heritage-heading">Ethiopia <em>and coffee</em></h2></div>
+        <p class="lead reveal">Ethiopia is strongly associated with coffee and is known for a rich coffee culture. Coffee is enjoyed in homes, caf&eacute;s, workplaces and social gatherings. Its importance goes beyond the drink itself: preparing and sharing coffee can create time for people to connect.</p>
+      </div>
+    </section>
 
-        <img src="C:\Users\MYG\Desktop\coffee\coffee.jpg" alt="Traditional Ethiopian coffee" width="400">
-        <p>
-            Ethiopia is widely recognized as the birthplace of coffee.
-            Coffee is one of the most important parts of Ethiopian culture
-            and daily life. It is not only a drink but also a symbol of
-            friendship, respect, and hospitality.
-        </p>
-        <section>
-            <h2>1. The Ethiopian Coffee Ceremony</h2>
+    <section class="section band-dark" id="ceremony" aria-labelledby="ceremony-heading">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow light">The traditional coffee ceremony</span><h2 id="ceremony-heading">Five stages <em>of welcome</em></h2></div>
+          <p style="max-width:44ch;margin:0">The Ethiopian coffee ceremony is a social tradition in which coffee is prepared and served to guests. It is often performed carefully and can be an important expression of welcome and respect.</p></div>
+        <ol class="timeline reveal">
+          <li><h3>Preparing</h3><p>Green coffee beans are cleaned and prepared for roasting.</p></li>
+          <li><h3>Roasting</h3><p>The beans are roasted, traditionally in a pan, until they develop their aroma.</p></li>
+          <li><h3>Grinding</h3><p>The roasted beans are ground before brewing.</p></li>
+          <li><h3>Brewing</h3><p>The coffee is prepared in a traditional pot called a <em>jebena</em>.</p></li>
+          <li><h3>Serving</h3><p>Coffee is poured into small cups and shared with guests.</p></li>
+        </ol>
+      </div>
+    </section>
 
-            <img src="C:\Users\MYG\Desktop\coffee\coffee ceremony.jpg" alt="Traditional Ethiopian coffee ceremony" width="350">
+    <section class="section" aria-labelledby="community-heading">
+      <div class="wrap split">
+        <div><span class="eyebrow">Together</span><h2 id="community-heading">Coffee <em>and community</em></h2>
+          <p class="quote reveal" style="margin-top:2rem">Coffee is the reason to stay a little longer.</p></div>
+        <div class="reveal">
+          <p class="lead">A coffee ceremony can bring family members, neighbors and friends together. It creates a setting for conversation, storytelling, welcoming guests and spending time with one another.</p>
+          <p>The ceremony may take place during ordinary visits as well as special gatherings. The details can vary between families and communities. Guests are often served more than one round of coffee, so it is worth settling in.</p>
+        </div>
+      </div>
+    </section>
 
-            <p>
-                The Ethiopian coffee ceremony is a traditional social
-                activity. It is commonly performed at home and during
-                special gatherings. The process includes roasting,
-                grinding, and brewing coffee beans.
-            </p>
+    <section class="section band" aria-labelledby="regions-heading">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">Origins</span><h2 id="regions-heading">Coffee-growing <em>regions</em></h2></div>
+          <p style="max-width:44ch;margin:0">Ethiopia has several coffee-growing areas, and different growing conditions contribute to a wide range of coffee characteristics.</p></div>
+        <div class="grid-4 reveal">
+          <div class="info-card"><span class="num">i.</span><h3>Yirgacheffe</h3><p>Known internationally for distinctive specialty coffees.</p></div>
+          <div class="info-card"><span class="num">ii.</span><h3>Sidama</h3><p>A major coffee-producing area with varied growing environments.</p></div>
+          <div class="info-card"><span class="num">iii.</span><h3>Harrar</h3><p>A historic coffee-growing area in eastern Ethiopia.</p></div>
+          <div class="info-card"><span class="num">iv.</span><h3>Jimma</h3><p>An important coffee-producing area in southwestern Ethiopia.</p></div>
+        </div>
+        <p class="muted" style="margin:26px 0 0;font-size:.88rem">Coffee characteristics vary by origin, variety, processing method and preparation. A region name alone does not guarantee a particular flavor.</p>
+      </div>
+    </section>
 
-            <h3>Steps of the Coffee Ceremony</h3>
+    <section class="section" aria-labelledby="coffee-etiquette-heading">
+      <div class="wrap split">
+        <div><span class="eyebrow">Good manners</span><h2 id="coffee-etiquette-heading">Experiencing <em>a ceremony</em></h2></div>
+        <div class="reveal"><p class="lead">If you are invited to a coffee ceremony, take time to enjoy the experience. Be respectful of the host's customs, ask questions politely, and remember that the gathering is about hospitality as much as coffee.</p>
+          <a class="btn btn-dark" href="culture.html">Explore the culture &#8599;</a></div>
+      </div>
+    </section>
 
-            <ol>
-                <li>Washing the green coffee beans.</li>
-                <li>Roasting the beans over heat.</li>
-                <li>Grinding the roasted coffee beans.</li>
-                <li>Boiling the coffee in a traditional pot called Jebena.</li>
-                <li>Serving coffee in small traditional cups.</li>
-            </ol>
-
-            <p>
-                The ceremony is often accompanied by traditional snacks
-                such as popcorn, bread, or roasted grains.
-            </p>
-        </section>
-
-        <section>
-            <h2>2. Coffee and Ethiopian Hospitality</h2>
-
-            <img src="C:\Users\MYG\Desktop\coffee\ceremony.jpg" alt="People enjoying Ethiopian coffee together" width="350">
-
-            <p>
-                Coffee is an important symbol of Ethiopian hospitality.
-                Inviting someone for coffee is a way of showing
-                kindness and respect. Families and neighbors often
-                gather around the coffee ceremony to enjoy conversations.
-            </p>
-
-            <p>
-                The ceremony creates a peaceful environment where
-                people can communicate, exchange ideas, and build
-                strong relationships.
-            </p>
-        </section>
-
-        <section>
-            <h2>3. Famous Coffee-Growing Regions</h2>
-
-            <p>
-                Ethiopia has several famous coffee-growing regions.
-                Each region produces coffee with unique flavors
-                and characteristics.
-            </p>
-
-            <ul>
-                <li><b>Sidama:</b> Known for its diverse coffee flavors.</li>
-                <li><b>Yirgacheffe:</b> Famous for its floral and citrus notes.</li>
-                <li><b>Harrar:</b> Known for distinctive fruity flavors.</li>
-                <li><b>Jimma:</b> An important coffee-producing area.</li>
-                <li><b>Kaffa:</b> Associated with the history of Ethiopian coffee.</li>
-                <li><b>Guji:</b> Known for specialty coffee production.</li>
-            </ul>
-
-            <img src="C:\Users\MYG\Desktop\coffee\yirgachiffe farm.jpg" alt="Coffee growing on an Ethiopian farm" width="350">
-        </section>
-
-        <section>
-            <h2>4. Types of Ethiopian Coffee Drinks</h2>
-
-            <p>
-                Ethiopian coffee can be prepared and enjoyed in
-                different ways depending on personal preference
-                and local tradition.
-            </p>
-
-            <ul>
-                <li><b>Traditional Coffee:</b> Coffee prepared using a Jebena.</li>
-                <li><b>Macchiato:</b> Coffee served with a small amount of milk.</li>
-                <li><b>Espresso:</b> A concentrated coffee drink.</li>
-                <li><b>Milk Coffee:</b> Coffee mixed with milk.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>5. Coffee Culture in Addis Ababa</h2>
-            <p>
-                Addis Ababa has many traditional coffee houses and
-                modern cafes. People visit these places to enjoy
-                coffee, meet friends, study, and relax.
-            </p>
-
-            <p>
-                Coffee shops are important social places in the city.
-                They bring together people from different backgrounds
-                and provide a place for communication and relaxation.
-            </p>
-            <img src="C:\Users\MYG\Desktop\coffee\cafe.jpg" alt="Coffee shop in Addis Ababa" width="350">
-        </section>
-        <section>
-            <h2>5. Coffee Production Process</h2>
-
-            <p>
-                Coffee production involves several stages, from
-                growing coffee plants to preparing the final drink.
-            </p>
-
-            <table border="1">
-                <tr>
-                    <th>Stage</th>
-                    <th>Description</th>
-                </tr>
-
-                <tr>
-                    <td>Growing</td>
-                    <td>Coffee plants are grown on farms.</td>
-                </tr>
-
-                <tr>
-                    <td>Harvesting</td>
-                    <td>Ripe coffee cherries are collected.</td>
-                </tr>
-
-                <tr>
-                    <td>Processing</td>
-                    <td>Coffee beans are separated and dried.</td>
-                </tr>
-
-                <tr>
-                    <td>Roasting</td>
-                    <td>Green coffee beans are roasted.</td>
-                </tr>
-
-                <tr>
-                    <td>Grinding</td>
-                    <td>Roasted beans are ground into powder.</td>
-                </tr>
-
-                <tr>
-                    <td>Brewing</td>
-                    <td>Ground coffee is prepared with hot water.</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
-            <h2>6. Importance of Coffee to Ethiopia</h2>
-
-            <ul>
-                <li>It creates employment opportunities.</li>
-                <li>It supports farmers and local businesses.</li>
-                <li>It contributes to the country's export economy.</li>
-                <li>It promotes Ethiopian culture around the world.</li>
-                <li>It strengthens social relationships and hospitality.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>7. Interesting Coffee Facts</h2>
-            <ul>
-                <li>Ethiopia is widely considered the birthplace of coffee.</li>
-                <li>Coffee is known locally as Buna.</li>
-                <li>The traditional coffee pot is called a Jebena.</li>
-                <li>The coffee ceremony is an important social tradition.</li>
-                <li>Ethiopia is famous for its specialty coffee varieties.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Watch and Learn More</h2>
-            <p>
-                Learn more about Ethiopian coffee traditions
-                and the traditional coffee ceremony.
-            </p>
-            <a href="https://www.youtube.com/results?search_query=Ethiopian+traditional+coffee+ceremony">
-                Watch Ethiopian Coffee Ceremony Videos
-            </a>
-        </section>
-    </main>
+  </main>
+  <footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="#d69a48" stroke-width="2" stroke-linecap="round"><path d="M5 27V15M11 27V8M17 27V19"/><path d="M23 27c0-6 2-9 5-11"/></g><circle cx="27" cy="9" r="2.4" fill="#2d5a45"/></svg><span>Soul of Addis<small>Field guide</small></span></a>
+        <p class="foot-tag">A field guide to the <em>beautifully unexpected.</em></p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="places.html">Places</a></li><li><a href="food.html">Food</a></li><li><a href="coffee.html">Coffee</a></li>
+        <li><a href="culture.html">Culture</a></li><li><a href="events.html">Events</a></li></ul></div>
+      <div><h4>Get ready</h4><ul>
+        <li><a href="plan.html">Plan a visit</a></li><li><a href="plan.html#phrases">Amharic phrases</a></li>
+        <li><a href="events.html#celebrations">Celebrations calendar</a></li><li><a href="IMAGE-CREDITS.md">Photo credits</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Soul of Addis. A student Internet Programming project.</span>
+      <span>Made to celebrate the stories, culture and heritage of Addis Ababa, Ethiopia.</span>
+      <a href="#top">Back to top &#8593;</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
-```
