@@ -1,38 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Culture | Addis Unveiled</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the cultural diversity, music, art, clothing, craft and heritage of Addis Ababa.">
+  <meta name="theme-color" content="#faf7f0">
+  <title>Culture, Art, and Heritage | Soul of Addis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/culture.css">
 </head>
-<body>
-    <header>
-        <h1>Culture, Art, and History</h1>
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a> |
-            <a href="places.html">Places</a> |
-            <a href="food.html">Food</a> |
-            <a href="coffee.html">Coffee</a> |
-            <a href="culture.html">Culture</a> |
-            <a href="events.html">Events</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Stories that shape the city</h2>
-        <p>Addis Ababa is home to diverse communities, languages, artistic traditions, and important historical sites.</p>
-        <article>
-            <h3>Music and dance</h3>
-            <p>Explore musical styles and dances found in Ethiopia's diverse cultural communities.</p>
-        </article>
-        <article>
-            <h3>Art and creativity</h3>
-            <p>Discover local artists, galleries, crafts, and creative spaces.</p>
-        </article>
-        <article>
-            <h3>History and heritage</h3>
-            <p>Introduce important moments and places in the history of Addis Ababa.</p>
-        </article>
-    </main>
-    <footer><p><a href="index.html">Back to home</a></p></footer>
+<body id="top" class="culture-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+  <div class="wrap nav-row">
+    <a class="logo" href="index.html" aria-label="Soul of Addis home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="#d69a48" stroke-width="2" stroke-linecap="round"><path d="M5 27V15M11 27V8M17 27V19"/><path d="M23 27c0-6 2-9 5-11"/></g><circle cx="27" cy="9" r="2.4" fill="#2d5a45"/></svg><span>Soul of Addis<small>Field guide</small></span></a>
+    <input class="nav-check vh" type="checkbox" id="nav-check" aria-label="Toggle menu">
+    <label class="nav-toggle" for="nav-check"><span></span></label>
+    <nav class="main-nav" id="site-nav" aria-label="Main navigation">
+      <ul><li><a href="places.html">Places</a></li><li><a href="food.html">Food</a></li><li><a href="coffee.html">Coffee</a></li><li><a href="culture.html" aria-current="page">Culture</a></li><li><a href="events.html">Events</a></li><li><a href="plan.html">Plan a visit</a></li><li><a class="nav-cta" href="places.html">Explore the city &#8599;</a></li></ul>
+    </nav>
+  </div>
+</header>
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="wrap grid">
+        <div>
+          <p class="crumbs"><a href="index.html">Home</a><span>/</span>Culture</p>
+          <h1>Culture, art <em>and heritage.</em></h1>
+          <p class="lead">Addis Ababa is home to people from many communities and backgrounds. Their languages, traditions, creativity and histories contribute to the character of the city.</p>
+        </div>
+        <div class="pattern-panel" role="img" aria-label="Decorative woven-style pattern with the Amharic word for culture"><div class="center"><span class="am" lang="am">ባህል</span><small>Culture · Bahil</small></div></div>
+      </div>
+    </section>
+
+    <section class="section tight" aria-labelledby="diversity-heading">
+      <div class="wrap split">
+        <div><span class="eyebrow">Many voices</span><h2 id="diversity-heading">A city of <em>many cultures</em></h2></div>
+        <div class="reveal"><p class="lead">As Ethiopia's capital, Addis Ababa brings together people from across the country and beyond. Different languages, customs, beliefs and ways of life can be experienced throughout the city.</p>
+          <p>This diversity is visible in everyday life, from markets and neighborhoods to food, music, celebrations and public spaces.</p></div>
+      </div>
+    </section>
+
+    <section class="section tight" style="padding-top:0">
+      <div class="wrap grid-2">
+        <article class="info-card dark reveal" aria-labelledby="music-heading"><span class="am" lang="am" style="color:var(--ochre)">ሙዚቃ</span><h3 id="music-heading">Music <em>and dance</em></h3>
+          <p>Music and dance are important forms of cultural expression in Ethiopia. Styles differ across communities and regions, with distinctive rhythms, instruments, movements and performance traditions.</p>
+          <p style="margin-top:1em">In Addis Ababa, traditional music exists alongside contemporary Ethiopian music and other international influences.</p></article>
+        <article class="info-card reveal" aria-labelledby="art-heading"><span class="am" lang="am">ጥበብ</span><h3 id="art-heading">Art <em>and creativity</em></h3>
+          <p>The city's creative life includes painting, sculpture, photography, crafts, design and contemporary artistic practices. Artists use different materials and ideas to express personal experiences and explore social and cultural themes.</p>
+          <p style="margin-top:1em">Galleries, cultural spaces, workshops and public events provide opportunities to discover creative work.</p></article>
+        <article class="info-card ochre reveal" aria-labelledby="clothing-heading"><span class="am" lang="am">ልብስ</span><h3 id="clothing-heading">Traditional clothing <em>and craft</em></h3>
+          <p>Traditional Ethiopian clothing includes garments made from woven cotton, often decorated with patterns and borders. Styles and designs vary across communities and occasions.</p>
+          <p style="margin-top:1em">Weaving, embroidery, basketry, pottery and other crafts are part of the country's diverse artistic heritage.</p></article>
+        <article class="info-card reveal" aria-labelledby="heritage-heading"><span class="am" lang="am">ታሪክ</span><h3 id="heritage-heading">History <em>and heritage</em></h3>
+          <p>Addis Ababa has a relatively recent history compared with many historic cities, but it has played an important role in Ethiopia's modern political, diplomatic and cultural life.</p>
+          <p style="margin-top:1em">Historic buildings, monuments, museums and public spaces help tell stories about the city's development and the people who shaped it.</p>
+          <p style="margin:1.2em 0 0"><a class="arrow-link" href="places.html">Explore heritage places &#8599;</a></p></article>
+      </div>
+    </section>
+
+    <section class="section band-dark" aria-labelledby="respect-heading">
+      <div class="wrap split">
+        <div><span class="eyebrow light">Travel thoughtfully</span><h2 id="respect-heading">Respecting <em>cultural diversity</em></h2></div>
+        <div class="reveal"><p class="lead">Culture is living and constantly changing. When learning about traditions, it is important to avoid treating one community's practices as representative of everyone.</p>
+          <p>Listen to local voices, use reliable sources, and ask permission before photographing people or cultural activities.</p>
+          <a class="btn btn-light" href="events.html">See celebrations &#8599;</a></div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="#d69a48" stroke-width="2" stroke-linecap="round"><path d="M5 27V15M11 27V8M17 27V19"/><path d="M23 27c0-6 2-9 5-11"/></g><circle cx="27" cy="9" r="2.4" fill="#2d5a45"/></svg><span>Soul of Addis<small>Field guide</small></span></a>
+        <p class="foot-tag">A field guide to the <em>beautifully unexpected.</em></p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="places.html">Places</a></li><li><a href="food.html">Food</a></li><li><a href="coffee.html">Coffee</a></li>
+        <li><a href="culture.html">Culture</a></li><li><a href="events.html">Events</a></li></ul></div>
+      <div><h4>Get ready</h4><ul>
+        <li><a href="plan.html">Plan a visit</a></li><li><a href="plan.html#phrases">Amharic phrases</a></li>
+        <li><a href="events.html#celebrations">Celebrations calendar</a></li><li><a href="IMAGE-CREDITS.md">Photo credits</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Soul of Addis. A student Internet Programming project.</span>
+      <span>Made to celebrate the stories, culture and heritage of Addis Ababa, Ethiopia.</span>
+      <a href="#top">Back to top &#8593;</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

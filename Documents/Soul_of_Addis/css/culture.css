@@ -1,0 +1,7 @@
+/* Culture page (culture.html): page-specific touches (most layout comes from base.css). */
+/* Culture-only touch: a soft woven texture on the dark card */
+.culture-page .info-card.dark {
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255,255,255,.04) 0 1px, transparent 1px 20px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,.04) 0 1px, transparent 1px 20px);
+}
