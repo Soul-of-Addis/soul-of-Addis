@@ -1,0 +1,36 @@
+/* Food page (food.html): dish lists. */
+.dish-list {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.dish-list li {
+  display: flex;
+  gap: 14px;
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+  font-size: .92rem;
+}
+
+.dish-list b {
+  font: 500 1.05rem var(--serif);
+  min-width: 96px;
+  color: var(--ink);
+}
+
+.dish-list span {
+  color: var(--muted);
+}
+
+.info-card.dark .dish-list li {
+  border-color: rgba(255,255,255,.15);
+}
+
+.info-card.dark .dish-list b {
+  color: var(--ochre);
+}
+
+.info-card.dark .dish-list span {
+  color: rgba(255,255,255,.72);
+}
+
